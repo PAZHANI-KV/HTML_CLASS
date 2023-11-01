@@ -1,0 +1,14 @@
+html {
+    font-size: 22px;
+}
+body {
+    background-color: rgb(156, 150, 156);
+    color: purple;
+}
+
+table, tr, th, td, caption{
+    border: 1px solid brown;
+    font-family: 'Courier New', Courier, monospace;
+    border-collapse: collapse;
+    padding: 0.5rem;
+}

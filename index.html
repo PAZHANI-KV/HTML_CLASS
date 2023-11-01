@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="money" />
+    <meta name="description" content="content to money" />
+    <title>My HTML Page</title>
+    <link rel="icon" href="htmlLogo.png" type="image/png" />
+    <link rel="stylesheet" href="main.css" type="text/css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Hello World!</h1>
+      <hr />
+
+      <p>
+        Hey There, <em>Im <strong>Aji</strong> here.</em>
+      </p>
+
+      <h2>MY Native</h2>
+
+      <p>
+        Im from India and Im living in the state of<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tamilnadu!
+      </p>
+
+      <!-- This &nbsp; is an html entity used to create a space in webpage if needed. -->
+
+      <h3>My age</h3>
+
+      <p>Im 26 years old.</p>
+      <hr />
+    </header>
+
+    <main>
+      <!-- Let us see some more examples of html entities below -->
+
+      <p>&lt;&copy;&gt;</p>
+      <!-- &lt; This html entity is used to print smaller symbol in webpage -->
+      <!-- &copy; this html entity is used to print copyright symbol in webpage -->
+      <!-- &gt; this html entity is used to print greater symbol in webpage -->
+      <hr />
+
+      <h3>Location</h3>
+
+      <address>Chennai</address>
+
+      <!-- NOTE: To learn more about this elements of html and html entities respectively, go to MDN(MOZILLA DEVELOPER NETWORKS) website and click on "MDN Web Docs" to learn more about them -->
+      <hr />
+      <nav>
+        <ul>
+          <li><a href="#gold">Go to Fullstack Development Informations</a></li>
+          <li><a href="#silver">Go to MDN Informations</a></li>
+          <li><a href="#contact">Contact me</a></li>
+        </ul>
+      </nav>
+      <!-- For the info abt above nav bar and its access, look at line number 80 and 96 -->
+      <hr />
+
+      <ol>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Car</li>
+        <li>Dog</li>
+      </ol>
+      <hr />
+
+      <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Car</li>
+        <li>Dog</li>
+      </ul>
+      <hr />
+
+      <!-- In the following tag list dl is description list, dt is description term and dd is description detail -->
+      <!-- The following section element and its use is discussed in the row line 51 -->
+      <article>
+        <section id="gold">
+          <dl>
+            <dt>FullStack Developer</dt>
+            <dd>One who handles both frontend and backend codings</dd>
+            <dt>Frontend Development</dt>
+            <dd>Here we will learn html, css, js, React</dd>
+            <dt>Backend Developer</dt>
+            <dd>
+              Here we will learn nodejs, Database management and even cloud
+              services
+            </dd>
+          </dl>
+        </section>
+        <hr />
+
+        <!-- The following section element and its uses are discussed in the row line 56 -->
+        <!-- a is anchor tag which is used to link web pages -->
+        <section id="silver">
+          <p><a href="https://www.youtube.com">YouTube</a></p>
+        </section>
+        <!-- Instead of Section tag we can simply use Article tag. Both the tags will do the same function. Orelse, we can use multiple section tags inside a article tag -->
+        <hr />
+      </article>
+
+      <p>
+        We can clear our code doubts from
+        <abbr title="Mozilla Developer Network"
+          ><a href="https://developer.mozilla.org/en-US/">MDN</a></abbr
+        >website resource.
+      </p>
+      <!-- On using the above abbreviation element, we can be able to see the abbreviation of a particular word in the web page on placing the cursor on that word -->
+      <hr />
+
+      <!-- Linking another local html page(aboutme.html) with the main html page(index.html) using anchor tag -->
+      <p><a href="aboutme.html">About Me</a></p>
+      <hr />
+
+      <img
+        src="img/pazhani_image.jpg"
+        alt="my picture"
+        title="my own picture"
+        width="300"
+        height="360"
+      />
+      <hr />
+
+      <figure>
+        <img
+          src="img/Family picture.jpg"
+          alt="familypic"
+          title="my family picture"
+          width="310"
+          height="435"
+          loading="lazy"
+        />
+        <figcaption>Happy Family</figcaption>
+      </figure>
+      <!-- What you are giving in title will be appeared when cursor moved on that particular image  -->
+      <!-- The figure tag used above will wrap the image to a certain point in the webpage and we can also use figcaption tag inside the figure tag.This figcaption tag can be used to describe abouth that particular picture in the webpage below the picture itself. -->
+      <!-- Reason for using loading attribute for the above image: Here we put lazy for loading attribute. Imagine a very big website which contains thousands of images. Loading these images all together in the first loading of the web page will make the server slow. Instead, if we use the loading=lazy attribute, then the images which are lower in the webpage will be loaded only when the page is scrolled down to that image point. This will make the webpage fast and more responsive. -->
+      <hr />
+
+      <!-- Another example for figure tag -->
+      <figure>
+        <figcaption>Example of a HTML code:</figcaption>
+        <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
+      </figure>
+      <hr />
+
+      <!-- You can be able to understand the the collective usage of the following aside, details, summary, p tag by seeing the result in webpage -->
+      <article>
+        <section>
+          <aside>
+            <details>
+              <summary>
+                Guess the <mark>number of hours</mark> I code per day
+              </summary>
+              <p>
+                I start at <time datetime="08:00">8 am</time> and I write code
+                for <time datetime="PT3H">3 hours</time> every morning
+              </p>
+            </details>
+          </aside>
+          <br />
+          <table>
+            <caption>
+              My Daily SCHEDULE
+            </caption>
+            <thead>
+              <tr>
+                <th>&nbsp;</th>
+                <th scope="col">Time</th>
+                <th scope="col">Activity</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Morning</th>
+                <td>
+                  <time datetime="08:00">8am</time>-<time datetime="11:00"
+                    >11am</time
+                  >
+                </td>
+                <td>Coding works</td>
+              </tr>
+              <tr>
+                <th scope="row">Break</th>
+                <td>
+                  <time datetime="11:00">11am</time>-<time datetime="12:00"
+                    >12pm</time
+                  >
+                </td>
+                <td>Lunch Break</td>
+              </tr>
+              <tr>
+                <th scope="row">Afternoon</th>
+                <td>
+                  <time datetime="12:00">12pm</time>-<time datetime="12:00"
+                    >6pm</time
+                  >
+                </td>
+                <td>Study time</td>
+              </tr>
+              <tr>
+                <th scope="row">Evening</th>
+                <td rowspan="2">All other time</td>
+                <td>Free Time</td>
+              </tr>
+              <tr>
+                <th scope="row">Night</th>
+                <td>Sleep</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="3">Eat, Sleep and code Everyday</td>
+              </tr>
+            </tfoot>
+          </table>
+        </section>
+      </article>
+      <hr />
+      <article id="contact">
+        <h2>Contact Me:</h2>
+        <p>I would like to hear from you.</p>
+        <form action="https://httpbin.org/get" , method="get">
+          <fieldset>
+            <legend>Personal Info</legend>
+            <p>
+              <label for="firstName">First Name:</label>
+              <input
+                type="text"
+                name="firstName"
+                id="firstName"
+                placeholder="Eg:Aji"
+                autocomplete="on"
+                required
+              />
+            </p>
+            <p>
+              <label for="lastName">Last Name:</label>
+              <input
+                type="text"
+                name="lastName"
+                id="lastName"
+                placeholder="Eg:Aji"
+                autocomplete="on"
+                required
+              />
+            </p>
+            <p>
+              <label for="password">Password:</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Your Password"
+                required
+              />
+            </p>
+            <p>
+              <label for="phone">Phone Number:</label>
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="Number"
+                pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+                required
+              />
+            </p>
+            <p>
+              <label for="decade">Fav decade:</label>
+              <input
+                type="number"
+                name="decade"
+                id="decade"
+                min="1950"
+                max="2020"
+                value="1980"
+                step="10"
+              />
+            </p>
+            <p>
+              <label for="content">Fav Content:</label>
+              <select name="content" id="content" multiple size="5">
+                <optgroup label="Earn Money">
+                  <option value="frontend">Frontend</option>
+                  <option value="backend">Backend</option>
+                  <option value="ai">AI</option>
+                  <option value="blockChain">Blockchain</option>
+                </optgroup>
+                <optgroup label="Grow Money">
+                  <option value="shareMarket">Sharemarket</option>
+                  <option value="trading">Trading</option>
+                </optgroup>
+                <optgroup label="Give Money">
+                  <option value="donate">How to donate</option>
+                </optgroup>
+              </select>
+            </p>
+            <!-- The following <p></p> is another way of form submission method -->
+            <!-- <p>
+          <label for="content">Fav Content:</label>
+          <input type="text" name="content" id="content" list="content-list">
+          <datalist id="content-list">
+            <option value="frontend">
+            <option value="backend">
+            <option value="ai">
+            <option value="blockChain">
+            <option value="shareMarket">
+            <option value="trading">
+            <option value="donate">
+        </p> -->
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>Favourite Food</legend>
+            <p>
+              <input type="radio" name="food" id="chicken" value="chicken" />
+              <label for="chicken">Chicken</label>
+            </p>
+            <p>
+              <input type="radio" name="food" id="mutton" value="mutton" />
+              <label for="mutton">Mutton</label>
+            </p>
+            <p>
+              <input type="radio" name="food" id="others" value="others" />
+              <label for="others">Others</label>
+            </p>
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>Favourite Pet</legend>
+            <p>
+              <input type="checkbox" name="pet" id="dog" value="dog" />
+              <label for="dog">Dog</label>
+            </p>
+            <p>
+              <input type="checkbox" name="pet" id="cat" value="cat" />
+              <label for="cat">Cat</label>
+            </p>
+            <p>
+              <input type="checkbox" name="pet" id="fish" value="fish" />
+              <label for="fish">Fish</label>
+            </p>
+          </fieldset>
+          <fieldset>
+            <legend>Send Me a Note</legend>
+            <label for="message">Your Message</label>
+            <p>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="Type Your Message Here"
+              ></textarea>
+            </p>
+          </fieldset>
+          <button type="submit">Submit</button>
+          <button
+            type="submit"
+            formaction="https://httpbin.org/post"
+            formmethod="post"
+          >
+            Post
+          </button>
+          <button type="reset">Reset</button>
+        </form>
+      </article>
+    </main>
+    <hr />
+    <footer>
+      <p><a href="#">Back to Top</a></p>
+    </footer>
+  </body>
+</html>
